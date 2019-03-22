@@ -1,4 +1,4 @@
-# santanu-admin
+# grogup-admin
 
 ## Project setup
 ```

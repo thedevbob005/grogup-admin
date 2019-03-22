@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-container fluid grid-list-xl>
+    <v-layout row wrap>
+      <v-flex xs12 sm6 md4 lg3>
+        <v-card color="blue-grey darken-2">
+          <v-card-title>
+            <div class="headline">Bars</div>
+          </v-card-title>
+          <v-card-text class="text-xs-center" style="font-size: xx-large">
+            32*
+          </v-card-text>
+          <v-divider></v-divider>
+          <v-card-actions>
+            <v-btn flat>Add more</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
+  components: {},
+  created () {
+    this.$store.state.titleBarText = 'Dashboard'
   }
 }
 </script>
